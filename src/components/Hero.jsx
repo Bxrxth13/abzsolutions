@@ -44,7 +44,7 @@ const Hero = () => {
 
                         <div className="flex flex-wrap gap-4">
                             <a href="#contact" className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-red-700 transition-all shadow-lg hover:shadow-red-200 hover:-translate-y-1">
-                                Start Building
+                                Start Buildin
                             </a>
                             <a href="#services" className="px-8 py-4 bg-white border border-gray-200 text-gray-900 font-bold rounded-full hover:border-gray-400 transition-all">
                                 Our Services
