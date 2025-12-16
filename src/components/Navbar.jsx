@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -21,11 +22,11 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'Services', href: '#services', hasDropdown: true },
-        { name: 'About', href: '#about' },
-        { name: 'Career', href: '#career' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '/#home', isRoute: false },
+        { name: 'Services', href: '/#services', hasDropdown: true, isRoute: false },
+        { name: 'About', href: '/#about', isRoute: false },
+        { name: 'Career', href: '/career', isRoute: true },
+        { name: 'Contact', href: '/#contact', isRoute: false },
     ];
 
     const servicesDropdown = [
@@ -44,45 +45,45 @@ const Navbar = () => {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
-                    <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/" className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
                         <img className="h-16 w-auto" src={logo} alt="Autobotz Logo" />
                         <span className="text-gray-900 font-extrabold text-2xl tracking-widest uppercase hidden sm:block">Autobotz Solutions</span>
-                    </div>
+                    </Link>
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
                             {navLinks.map((link) => (
                                 <div key={link.name} className="relative group">
-                                    <a
-                                        href={link.href}
+                                    <Link
+                                        to={link.href}
                                         className="text-gray-800 hover:text-primary px-4 py-2 rounded-md text-base font-bold transition-colors duration-300 flex items-center gap-1"
                                     >
                                         {link.name}
                                         {link.hasDropdown && <ChevronDown size={16} className="mt-0.5" />}
                                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
+                                    </Link>
 
                                     {/* Dropdown Menu */}
                                     {link.hasDropdown && (
                                         <div className="absolute left-0 mt-2 w-72 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50 overflow-hidden">
                                             <div className="py-2">
                                                 {servicesDropdown.map((service, index) => (
-                                                    <a
+                                                    <Link
                                                         key={index}
-                                                        href="#services"
+                                                        to="/#services"
                                                         className="block px-6 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary transition-colors border-b border-gray-50 last:border-0"
                                                     >
                                                         {service}
-                                                    </a>
+                                                    </Link>
                                                 ))}
                                             </div>
                                         </div>
                                     )}
                                 </div>
                             ))}
-                            <a href="#contact" className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 uppercase tracking-wide text-sm shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]">
+                            <Link to="/#contact" className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 uppercase tracking-wide text-sm shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]">
                                 Explore <ChevronRight size={18} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -107,22 +108,22 @@ const Navbar = () => {
                     >
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
-                                    href={link.href}
+                                    to={link.href}
                                     onClick={() => setIsOpen(false)}
                                     className="text-gray-600 hover:text-primary hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
-                            <a
-                                href="#contact"
+                            <Link
+                                to="/#contact"
                                 onClick={() => setIsOpen(false)}
                                 className="mt-4 w-full bg-primary hover:bg-red-700 text-center text-white block px-3 py-3 rounded-md text-base font-bold transition-all shadow-lg shadow-primary/30"
                             >
                                 Get Started
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
                 )}

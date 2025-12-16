@@ -6,7 +6,7 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-import webDesignImg from '../assets/webdesign.webp';
+import webDesignImg from '../assets/webdesign.jpg';
 import digitalMarketingImg from '../assets/digitalmarketing.png';
 import staffImg from '../assets/methodology_growth.png'; // Using existing growth image for "Staff" fallback if needed, or just rotating these.
 
@@ -28,14 +28,12 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                         className="text-left"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-red-50 border border-red-100 text-primary text-sm font-bold mb-6 tracking-wider uppercase">
-                            Autobotz Solutions
-                        </span>
+
 
                         <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">
-                            <span className="block mb-2"><span className="text-primary">WE</span> <span className="text-gray-900">CODE.</span></span>
-                            <span className="block mb-2 bg-primary text-white w-fit px-4 -ml-4">WE MARKET.</span>
-                            <span className="block"><span className="text-primary">WE</span> <span className="text-gray-900">STAFF.</span></span>
+                            <span className="block mb-2"><span className="text-primary">We</span> <span className="text-gray-900">Build.</span></span>
+                            <span className="block mb-2 bg-primary text-white w-fit px-4 -ml-4 hover:text-black transition-colors duration-300">We Market</span>
+                            <span className="block"><span className="text-primary">We</span> <span className="text-gray-900">Staff.</span></span>
                         </h1>
 
                         <p className="text-xl text-gray-500 mb-10 max-w-lg leading-relaxed">
@@ -65,6 +63,7 @@ const Hero = () => {
                         <Swiper
                             modules={[Autoplay, EffectFade]}
                             effect={'fade'}
+                            fadeEffect={{ crossFade: true }}
                             spaceBetween={30}
                             slidesPerView={1}
                             loop={true}
@@ -72,27 +71,27 @@ const Hero = () => {
                                 delay: 2500,
                                 disableOnInteraction: false,
                             }}
-                            className="w-full max-w-md !overflow-visible"
+                            className="w-full max-w-md"
                         >
-                            <SwiperSlide className="!overflow-visible py-10">
+                            <SwiperSlide className="py-10">
                                 <img
                                     src={webDesignImg}
                                     alt="Web Design & Development"
-                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white scale-125"
+                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white"
                                 />
                             </SwiperSlide>
-                            <SwiperSlide className="!overflow-visible py-10">
+                            <SwiperSlide className="py-10">
                                 <img
                                     src={digitalMarketingImg}
                                     alt="Digital Marketing"
-                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white scale-125"
+                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white"
                                 />
                             </SwiperSlide>
-                            <SwiperSlide className="!overflow-visible py-10">
+                            <SwiperSlide className="py-10">
                                 <img
                                     src={staffImg}
                                     alt="Staffing Solutions"
-                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white scale-125"
+                                    className="w-full h-auto object-contain drop-shadow-2xl border-4 border-white rounded-3xl shadow-xl bg-white"
                                 />
                             </SwiperSlide>
                         </Swiper>
