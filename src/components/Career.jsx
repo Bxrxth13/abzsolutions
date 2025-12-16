@@ -15,7 +15,7 @@ const Career = () => {
     };
 
     return (
-        <section id="career" className="py-24 bg-white relative">
+        <section id="career" className="py-24 bg-gray-100 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -142,7 +142,7 @@ const Career = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Position 1 */}
-                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
                         <div className="mb-4">
                             <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Full Time</span>
                         </div>
@@ -155,7 +155,7 @@ const Career = () => {
                     </div>
 
                     {/* Position 2 */}
-                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
                         <div className="mb-4">
                             <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Full Time</span>
                         </div>
@@ -168,7 +168,7 @@ const Career = () => {
                     </div>
 
                     {/* Position 3 */}
-                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all group">
                         <div className="mb-4">
                             <span className="bg-purple-100 text-purple-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Contract</span>
                         </div>

@@ -39,9 +39,9 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-24 bg-gray-50 relative">
+        <section id="services" className="py-24 bg-white relative">
             {/* Background Accent */}
-            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-b from-gray-100 to-white opacity-50 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gray-100 opacity-50 blur-3xl pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
@@ -91,7 +91,7 @@ const Services = () => {
                     >
                         {services.map((service, index) => (
                             <SwiperSlide key={index} className="h-full">
-                                <div className="p-8 h-full min-h-[300px] rounded-2xl bg-gray-50 border border-red-100 hover:border-primary/50 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(220,38,38,0.1)] flex flex-col cursor-pointer">
+                                <div className="p-8 h-full min-h-[300px] rounded-2xl bg-gray-100 border border-red-100 hover:border-primary/50 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(220,38,38,0.1)] flex flex-col cursor-pointer">
                                     <div className="mb-6 p-4 bg-white shadow-sm rounded-xl inline-block text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 w-fit">
                                         {service.icon}
                                     </div>
@@ -117,7 +117,7 @@ const Services = () => {
             {/* Split Divider with Red Accent */}
             <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[calc(100%+1.3px)] h-[60px] md:h-[120px]">
-                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" className="fill-white"></path>
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" className="fill-gray-100"></path>
                     <path d="M1200 120L0 120 0 0 600 100 1200 0z" className="fill-primary/5" style={{ mixBlendMode: 'multiply' }}></path>
                 </svg>
             </div>

@@ -4,7 +4,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 const WhyChooseUs = () => {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 bg-gray-100 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <motion.div
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             {/* Creative Divider - Slanted with Red */}
             <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[calc(100%+1.3px)] h-[60px] md:h-[120px]">
-                    <path d="M1200 120L0 0 0 120 1200 120z" className="fill-gray-50"></path>
+                    <path d="M1200 120L0 0 0 120 1200 120z" className="fill-white"></path>
                     <path d="M1200 120L0 30 0 120 1200 120z" className="fill-primary/5"></path>
                 </svg>
             </div>

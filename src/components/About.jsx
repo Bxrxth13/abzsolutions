@@ -66,7 +66,7 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
-                        <div className="relative z-10 bg-gradient-to-br from-gray-200 to-gray-50 p-1 rounded-2xl rotate-2 hover:rotate-0 transition-all duration-500 shadow-2xl shadow-primary/20">
+                        <div className="relative z-10 bg-gradient-to-br from-gray-200 to-gray-100 p-1 rounded-2xl rotate-2 hover:rotate-0 transition-all duration-500 shadow-2xl shadow-primary/20">
                             <div className="bg-white rounded-xl overflow-hidden h-96 flex items-center justify-center border border-gray-200">
                                 {/* Placeholder for an image or graphic */}
                                 <div className="text-center p-8">
@@ -87,7 +87,7 @@ const About = () => {
             {/* Zigzag Divider with Red */}
             <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[calc(100%+1.3px)] h-[60px] md:h-[120px]">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="fill-gray-50"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="fill-gray-100"></path>
                     <path d="M1200 120L0 40 0 120 1200 120z" className="fill-primary/5"></path>
                 </svg>
             </div>

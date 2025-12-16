@@ -26,7 +26,7 @@ const Methodology = () => {
     ];
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 bg-gray-100 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-20">
                     <span className="text-primary font-bold tracking-wider uppercase text-sm">How We Work</span>

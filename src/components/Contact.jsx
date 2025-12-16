@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-24 bg-gray-50 relative">
+        <section id="contact" className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -22,7 +22,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-red-100">
+                        <div className="flex items-start gap-4 p-6 bg-gray-100 rounded-xl border border-red-100">
                             <div className="bg-primary/10 p-3 rounded-lg text-primary">
                                 <Mail size={24} />
                             </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-red-100">
+                        <div className="flex items-start gap-4 p-6 bg-gray-100 rounded-xl border border-red-100">
                             <div className="bg-primary/10 p-3 rounded-lg text-primary">
                                 <Phone size={24} />
                             </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-red-100">
+                        <div className="flex items-start gap-4 p-6 bg-gray-100 rounded-xl border border-red-100">
                             <div className="bg-primary/10 p-3 rounded-lg text-primary">
                                 <MapPin size={24} />
                             </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                         initial={{ opacity: 1, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-gray-50 p-8 rounded-2xl border border-red-100"
+                        className="bg-gray-100 p-8 rounded-2xl border border-red-100"
                     >
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
